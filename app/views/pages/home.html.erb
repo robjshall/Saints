@@ -1,0 +1,14 @@
+<div class= "hero-unit">
+<% if user_signed_in? %>
+<h1>You have registered with gainly!</h1>
+<p>We will send you details as soon as deals are available!</p>
+<% else %>
+<h1>gainly</h1>
+<p>Welcome to the gainly website - connecting Bristol students with pop-up deals.</p>
+<p><%= link_to "Sign Up Now!", new_user_registration_path, class: "btn btn-success btn-large" %>
+</p>
+<% end %>
+</div>
+</div>
+
+
